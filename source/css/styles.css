@@ -35,9 +35,6 @@ nav div {
 	padding: 1rem;
 }
 
-nav a {
-}
-
 div.container {
 	margin: 80px auto;
 	max-width: 800px;
@@ -76,7 +73,6 @@ pre {
 
 p.year {
 	font-weight: bold;
-	/*text-align: center;*/
 	padding-top: 20px;
 }
 
@@ -92,9 +88,25 @@ footer {
 	width: 100%;
 	border-top: 1px solid #999999;
 	text-align: center;
-	padding: 1em 0;
+	padding: 0.5rem 0;
 }
 
 footer a {
 	color: #000000;
+}
+
+p.post-title {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+p.post-date {
+	font-size: 1rem;
+	color: #777777;
+	text-align: center;
+}
+
+div.post-content {
+	margin-top: 10px;
 }

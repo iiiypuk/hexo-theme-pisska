@@ -1,11 +1,11 @@
-<p style="text-align: center;">
-<%= page.title %>
-</p>
+<p class="post-title"><%= page.title %></p>
 <hr>
-<p style="text-align: center;">
-  Опубликовано: <%- date(page.date, 'YYYY-MM-DD') %>
+<p class="post-date">
+  Опубликовано: <%- date(page.date, 'Do MMMM YYYY') %>
   &mdash;
-  Обновлено: <%- date(page.updated, 'YYYY-MM-DD') %>
+  Обновлено: <%- date(page.updated, 'Do MMMM YYYY') %>
 </p>
 <hr>
-<%- page.content %>
+<div class="post-content">
+  <%- page.content %>
+</div>
