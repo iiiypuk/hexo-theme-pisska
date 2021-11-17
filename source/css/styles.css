@@ -28,7 +28,7 @@ nav {
 	top: 0;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 9fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 nav div {
@@ -64,19 +64,32 @@ div.post-link {
 	margin: 8px;
 }
 
-figure.highlight {
+figure.highlight, code {
 	color: #dcdde1;
 	font-size: 1.1rem;
 	background-color: #2f3640;
 	font-weight: normal;
 }
 
-span.line {
-	margin-right: 10px;
+figure.highlight {
+	overflow-x: scroll;
 }
 
-pre {
+span.line {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+pre, code {
 	font-family: 'Fira Mono', monospace;
+}
+
+code {
+	padding: 4px;
+}
+
+td.gutter {
+	border-right: 1px solid #dcdde1;
 }
 
 p.year {
@@ -117,4 +130,9 @@ p.post-date {
 
 div.post-content {
 	margin-top: 10px;
+}
+
+div.post-content img {
+	max-width: 100%;
+	text-align: center;
 }
