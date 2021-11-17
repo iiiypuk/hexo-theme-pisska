@@ -48,7 +48,22 @@ div.container {
 p.year {
 	font-weight: bold;
 	/*text-align: center;*/
-	padding: 10px 0;
+	padding-top: 20px;
+}
+
+div.archives {
+	line-height: 1.3;
+}
+
+div.archives a {
+	color: #000000;
+	text-decoration: none;
+	transition: border-bottom .1s;
+}
+
+div.archives a:hover {
+	border-bottom: 2px solid #000000;
+	transition: border-bottom .1s;
 }
 
 footer {
