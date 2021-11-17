@@ -36,13 +36,42 @@ nav div {
 }
 
 nav a {
-	text-decoration: none;
-	color: #000000;
 }
 
 div.container {
 	margin: 80px auto;
 	max-width: 800px;
+}
+
+a {
+	color: #000000;
+	border-bottom: 3px solid rgba(0, 0, 0, .1);
+	text-decoration: none;
+	transition: border-bottom-color .2s;
+}
+
+nav a, footer a {
+	border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+	border-bottom-color: rgba(0, 0, 0, 1);
+	transition: border-bottom-color .2s;
+}
+
+figure.highlight {
+	color: #dcdde1;
+	font-size: 1.1rem;
+	background-color: #2f3640;
+	font-weight: normal;
+}
+
+span.line {
+	margin-right: 10px;
+}
+
+pre {
+	font-family: 'Fira Mono', monospace;
 }
 
 p.year {
@@ -55,17 +84,6 @@ div.archives {
 	line-height: 1.3;
 }
 
-div.archives a {
-	color: #000000;
-	text-decoration: none;
-	transition: border-bottom .1s;
-}
-
-div.archives a:hover {
-	border-bottom: 2px solid #000000;
-	transition: border-bottom .1s;
-}
-
 footer {
 	background-color: var(--bg-color);
 	position: fixed;
@@ -75,4 +93,8 @@ footer {
 	border-top: 1px solid #999999;
 	text-align: center;
 	padding: 1em 0;
+}
+
+footer a {
+	color: #000000;
 }
