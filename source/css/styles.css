@@ -56,6 +56,14 @@ a:hover {
 	transition: border-bottom-color .2s;
 }
 
+a.post-link {
+	cursor: pointer;
+}
+
+div.post-link {
+	margin: 8px;
+}
+
 figure.highlight {
 	color: #dcdde1;
 	font-size: 1.1rem;

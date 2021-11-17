@@ -7,9 +7,11 @@
       <% last = year; %>
     <% } %>
 
-    <a style="cursor: pointer;" href="<%- url_for(post.path) %>">
+    <div class="post-link">
+    <a class="post-link" href="<%- url_for(post.path) %>" title="<%= post.title %>">
       <%- full_date(post.date, 'Do MMMM') %> &mdash;
       <%= post.title %>
     </a>
+    </div>
   <% }) %>
 </div>
