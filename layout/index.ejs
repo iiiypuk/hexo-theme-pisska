@@ -1,0 +1,15 @@
+<div>
+  <% let last; %>
+  <% page.posts.each(function (post) { %>
+    <% let year = post.date.year(); %>
+    <% if (last != year) { %>
+      <p class="year"><%= year %></p>
+      <% last = year; %>
+    <% } %>
+
+    <a style="cursor: pointer;" href="<%- url_for(post.path) %>">
+      <%- full_date(post.date, 'Do MMMM') %> &mdash;
+      <%= post.title %>
+    </a>
+  <% }) %>
+</div>

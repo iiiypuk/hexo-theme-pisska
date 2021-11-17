@@ -1,0 +1,11 @@
+<p style="text-align: center;">
+<%= page.title %>
+</p>
+<hr>
+<p style="text-align: center;">
+  Опубликовано: <%- date(page.date, 'YYYY-MM-DD') %>
+  &mdash;
+  Обновлено: <%- date(page.updated, 'YYYY-MM-DD') %>
+</p>
+<hr>
+<%- page.content %>

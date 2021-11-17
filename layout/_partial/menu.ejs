@@ -1,0 +1,11 @@
+<nav>
+  <div>
+    <a href="/"><%- config.title %></a>
+  </div>
+
+  <div style="text-align: right;">
+    <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <% } %>
+  </div>
+</nav>
