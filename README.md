@@ -5,9 +5,9 @@ Just a pussy.
 - Simple design
 
 ## Screenshots
-Coming Soon.
+`Coming Soon`
 
-See my [blog](blog.iiiypuk.me).
+See my [blog](https://blog.iiiypuk.me).
 
 ## ChangeLog
 See [CHANGELOG.md](CHANGELOG.md)
