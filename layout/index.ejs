@@ -3,7 +3,7 @@
   <% page.posts.each(function (post) { %>
     <% let year = post.date.year(); %>
     <% if (last != year) { %>
-      <p class="year"><%= year %></p>
+      <p class="year"><%= year %> год:</p>
       <% last = year; %>
     <% } %>
 
